@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 :root{
 
---cor-primaria: #000;
+--cor-primaria: #000000;
 --cor-secundaria:#b5c0ba;
 --cor-terciaria: #202ccf;
---cor-rodape:#065c8dcc;
 --cor-hover: #02edf5;
 
 --font-principal: "Krona One", "sans-serif";
@@ -22,6 +21,7 @@ body{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     max-width: 100%;
+    gap:10%;
 }
 .cabecalho{
     padding: 2% 0 0 15%;
@@ -32,7 +32,7 @@ body{
 }
 .cabecalho__menu__link {
     
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 600;
     font-family: var(--font-secundaria);
     text-decoration: none;
@@ -55,6 +55,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:82px;
 }
 
 .apresentacao__conteudo{
@@ -65,12 +66,12 @@ body{
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--font-principal);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
 
 }
@@ -88,6 +89,7 @@ body{
 }
 /* Adiciona um espaçamento de 10 pixels abaixo do texto */
 .apresentacao__conteudo__texto {
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
@@ -96,7 +98,7 @@ body{
 .apresentacao__links__subtitulo{
     font-family: var(--font-principal);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .apresentacao__links__link{
     /* background-color: #22D4FD; */
@@ -107,7 +109,7 @@ body{
     width: 378px;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -126,12 +128,14 @@ body{
 
 
 .rodape {
+    background: rgb(1,1,10);
+    background: linear-gradient(90deg, rgba(1,1,10,0.8953781341638218) 0%, rgba(37,0,235,1) 0%, rgba(15,15,14,0.9878151089537377) 51%);
     padding: 24px;
-    color:var(--cor-primaria);
+    color:var(--cor-secundaria);
     background-color: var(--cor-rodape);
     text-align: center;
     font-family: var(--font-principal);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -150,7 +154,7 @@ span:hover{
 
 
 #contato{
-    font-size: 0.8em;
+    font-size: 1.5rem;
 }
     /*MEDIA QUERIES */
 
@@ -201,20 +205,21 @@ span:hover{
     /* Mobile */
     @media only screen and (max-width: 768px) {
     body {
-        font-size: 12px; /* Adjust the base font size for better mobile readability */
+        font-size: 1.5rem; /* Adjust the base font size for better mobile readability */
     }
 
     .cabecalho {
-        padding: 2% 0 0 5%; /* Adjust header padding for smaller screens */
+        padding: 10% ; /* Adjust header padding for smaller screens */
     }
 
     .cabecalho__menu {
+        justify-content:center;
         gap: 25px; /* Adjust menu item spacing for smaller screens */
     }
 
     .apresentacao {
         padding: 5% 10%; /* Adjust section padding for smaller screens */
-        flex-direction: column; /* Stack content in presentation section */
+        flex-direction: column-reverse; /* Stack content in presentation section */
         align-items: center;
     }
 
@@ -223,11 +228,11 @@ span:hover{
     }
 
     .apresentacao__conteudo__titulo {
-        font-size: 18px; /* Adjust title font size for smaller screens */
+        font-size: 2.25rem; /* Adjust title font size for smaller screens */
     }
 
     .apresentacao__conteudo__texto {
-        font-size: 14px; /* Adjust text font size for smaller screens */
+        font-size: 2.0rem; /* Adjust text font size for smaller screens */
     }
 
     .apresentacao__links {
@@ -240,6 +245,8 @@ span:hover{
 
     .rodape {
         font-size: 1.2em; /* Adjust footer font size for smaller screens */
+        padding:5%;
+
     }
     }
 
